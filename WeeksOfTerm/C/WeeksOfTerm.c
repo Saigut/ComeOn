@@ -5,7 +5,7 @@
 int dayofweek(int day);
 void showusage(void);
 
-int main( int argc, char *argv[] )
+int main(int argc, char *argv[])
 {
   if (argc != 4)
     {
@@ -15,7 +15,7 @@ int main( int argc, char *argv[] )
     }
   
   time_t now, termbegin_sec;
-  int cal_diffdays, weeks; 		// cal_diffdays not real diffdays.
+  int cal_diffdays, weeks; 		// cal_diffdays is not real diffdays.
   now = time(0);
   
   struct  tm termbegin = {0, 0, 0, atoi(argv[1]), atoi(argv[2])-1, atoi(argv[3])-1900, 0, 0, 0};
