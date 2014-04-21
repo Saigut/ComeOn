@@ -39,4 +39,5 @@ int dayofweek(int day)
 void showusage(void)
 {
   puts("\nUsage: ProgramName dd mm yyyy");
+  puts("\nNotice: This date should be the date of the term's beginning");
 }
